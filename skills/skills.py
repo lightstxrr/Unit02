@@ -41,3 +41,11 @@ def calculate_change(purchase_price, amount_paid):
     return change
 
 print("Change:", calculate_change(30, 50))
+
+""" Exercise 6 """
+
+def minutes_til_midnight(hour, minute):
+    total_minutes = 24 * 60 - (hour * 60 + minute)
+    return total_minutes
+
+print("Minutes till midnight:", minutes_til_midnight(22, 30))
