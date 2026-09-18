@@ -49,3 +49,24 @@ def minutes_til_midnight(hour, minute):
     return total_minutes
 
 print("Minutes till midnight:", minutes_til_midnight(22, 30))
+
+""" Exercise 7 """
+
+def apply_discount(price, discount):
+    discounted_price = price - (price * discount)
+    return discounted_price
+
+
+def apply_tax(price, sales_tax):
+    taxed_price = price + (price * sales_tax)
+    return taxed_price
+
+
+def final_price(price, discount, sales_tax):
+    discounted_price = apply_discount(price, discount)
+    total_price = apply_tax(discounted_price, sales_tax)
+    return total_price
+
+
+print(final_price(85, 0.15, 0.08))
+   
