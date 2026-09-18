@@ -69,4 +69,21 @@ def final_price(price, discount, sales_tax):
 
 
 print(final_price(85, 0.15, 0.08))
-   
+
+""" Exercise 8 """
+
+score = 100
+bonus = 25
+penalty = 15
+
+final_score = score + bonus - penalty
+
+print(final_score)
+
+recipe_serves = 5
+num_guests2 = 10
+cups_flour = 3
+
+flour_needed = cups_flour / recipe_serves * num_guests2
+
+print(flour_needed)
