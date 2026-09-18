@@ -22,5 +22,14 @@ print("Cheese needed:", cheese_needed)
 
 total_budget = 1000
 daily_cost = 150
-trip_length = total_budget // daily_cost
-print("Trip length:", trip_length)
+trip_length = 5
+remaining_budget = total_budget - (daily_cost * trip_length)
+print("Remaining budget:", remaining_budget)
+
+""" Exercise 4 """
+
+def calculate_price(cost, tip):
+    total = cost + (cost * tip)
+    return total
+
+print("Total price with tip:", calculate_price(50, 0.15))
